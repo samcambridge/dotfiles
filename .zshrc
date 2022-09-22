@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/samcambridge/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -100,32 +100,13 @@ autoload -U promptinit; promptinit
 
 prompt pure
 export PATH=".:$PATH"
-export PATH="/Users/samcambridge/:$PATH"
-export PATH="/Applications/Postgres.app/Contents/Versions/12.5/bin:$PATH"
 
-alias rc="bundle exec rails c"
 alias gfp="git fetch --all && git pull"
 alias burnpack="bundle install && yarn install && ./bin/webpack"
 alias tu="bundle exec spring testunit "
 alias be="bundle exec "
-alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
 alias fs="foreman start"
-alias rs="rails server -p 3000"
 alias testing="CI_NAME='CI' bundle exec rails test"
 alias newiss="script/new-branch-for-issue.rb"
 
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/opt/elasticsearch@5.6/bin:$PATH"
 export PATH=$PATH:~/.vimpkg/bin
-export PATH="$PATH:$(yarn global bin)"
-eval "$(rbenv init -)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/samcambridge/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/samcambridge/Documents/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/samcambridge/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/samcambridge/Documents/google-cloud-sdk/completion.zsh.inc'; fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
