@@ -96,9 +96,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-autoload -U promptinit; promptinit
-
-prompt pure
 export PATH=".:$PATH"
 
 alias gfp="git fetch --all && git pull"
