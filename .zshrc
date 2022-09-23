@@ -106,5 +106,6 @@ alias fs="foreman start"
 alias testing="CI_NAME='CI' bundle exec rails test"
 alias newiss="script/new-branch-for-issue.rb"
 alias ey="yarn && ./bin/webpack --watch --colors --progress"
+alias rc="rails c"
 
 export PATH=$PATH:~/.vimpkg/bin
